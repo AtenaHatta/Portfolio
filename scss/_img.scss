@@ -1,0 +1,109 @@
+.icon {
+ @include iconSize;
+}
+
+.icon-img{
+  width: 15%;
+}
+
+.icon-img:hover, .icon:hover{
+  transform: translateY(-7px);
+}
+
+// Top image -------------------
+.myChangeImage {
+  height: 35rem;
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.top_img {
+  opacity: 0;
+  width:85%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: anime 20s 0s infinite;
+  animation: anime 20s 0s infinite;
+}
+
+.top_img:nth-of-type(2) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.top_img:nth-of-type(3) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 20s;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+//  About-------------------------
+.about-img{
+  width: 40%;
+}
+
+//  Project-------------------------
+.img-project{
+  width: 100%;
+}
+
+.icon-img-pj-flex{
+  display: flex;
+}
+
+.icon-img-pj1{
+  width: 33%;
+}
+
+.icon-img-pj2{
+  width: 10%;
+}
+
+.icon-img-pj3{
+  width: 10%;
+}
+
+.icon-img-pj-flex2{
+  text-align: right;
+}

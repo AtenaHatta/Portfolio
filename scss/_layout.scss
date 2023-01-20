@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 100%;
+}
+
+body{
+  background-image: url(/img/bg_white.png);
+  background-attachment: fixed;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size:contain;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  margin: -2% 2%;
+  width: 94%;
+  font-family: 'Secular One', sans-serif;
+  z-index: 1000;
+  .btn_contact:hover{
+    background-color: rgb(164, 250, 221);
+  }
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+  padding-bottom: 20%;
+}
+
+h3{
+  padding: 1%;
+}
+
+h3:hover{
+  color: rgb(11, 186, 239);
+}
+
+h1{
+  font-family: 'Secular One', sans-serif;
+}
+
+.top-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  width: 100%;
+}
+
+// header -------------------
+.logo{
+  font-size: 1.7rem;
+  letter-spacing: 1rem;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem white;
+  font-family: 'Secular One', sans-serif;
+  z-index: 100000;
+  // font-family: $bold-text;
+}
+
+// right side "menu" -------------------
+.menu_container{
+  text-align: left;
+  width: 15%;
+  padding: 0% 0.1%;
+  display:inline;
+  margin-left: 0;
+  font-family: 'Secular One', sans-serif;
+  position: fixed;
+  right:0;
+  z-index: 999;
+}
+
+.topmenu_box{
+  margin-top: 40%;
+  font-size: 1.4rem;
+}
+
+.sns_img{
+  display: flex;
+  justify-content: space-between;
+}
+
+// left side top ---------------------
+.main_container{
+  margin: 0;
+  width: 75%; //left side 75%, right side 15%, space 10%
+}
+
+.top_name{
+  position: absolute;
+  left: 13%;
+  top: 7%;
+  font-size: 17rem;
+  text-align: center;
+  line-height: 110%;
+  color: rgb(255, 255, 255);
+}
+
+.top-bgimg{
+  text-align: center;
+}
+
+.handwriting{
+  font-family: 'Moon Dance', cursive;
+  padding-top: 1%;
+}
+
+// about ---------------------
+.about{
+  margin-top: 30%;
+  margin-bottom: 30%;
+  margin-left:15%;
+  margin-right: 20%;
+  text-align: left;
+  h1{
+    font-size: 6rem;
+  }
+}
+
+.box-about{
+  font-family: 'Secular One', sans-serif;
+  h2{
+    padding-top: 10%;
+  }
+  p{
+    padding: 4%;
+  }
+  .box-about{
+    display: flex;
+  }
+  .green-img{
+    position: absolute;
+    bottom: 70%;
+    // right: 0%;
+    left: 0;
+    z-index: -1;
+  }
+  .flex{
+    position: relative;
+    display: flex;
+    img{
+      width: 50%;
+    } 
+  }
+
+  .button{
+    background-color: #7fd4c9;
+    border-color: #7fd4c9;
+    padding: 2% 3%;
+    margin: 0% 2%;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1rem;
+  }
+  .button:hover{
+    background-color: rgb(164, 250, 221);
+  }
+}
+
+// skill ---------------------
+.skill{
+  margin-top: 30%;
+  margin-bottom: 30%;
+  margin-left:15%;
+  margin-right: 20%;
+  h1{
+    font-size: 6rem;
+  }
+}
+
+.icon-img-pg{
+  width: 10%;
+}
+
+.box-skill-img{
+  background-color: #e8ebef;
+  padding: 2%;
+  height: 5rem;
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.box-skill{
+  font-family: 'Secular One', sans-serif;
+  p{
+    padding: 4%;
+  }
+  .box-skill-img{
+    display: flex;
+    position: relative;
+  }
+  .flex{
+    display: flex;
+    .pink-img{
+      z-index: -1;
+      position: absolute;
+      bottom: 40%;
+      left:5%;
+    }
+  }
+}
+
+// contact ---------------------
+.container {
+  border-radius: 5px;
+  padding: 5%;
+  margin: 0 15%;
+  font-family: 'Secular One', sans-serif;
+}
+
+// project ---------------------
+.project{
+  margin-top: 30%;
+  margin-bottom: 30%;
+  margin-left:15%;
+  margin-right: 20%;
+  position: relative;
+}
+
+.box-project{
+  display: grid;
+  flex-direction: column;
+  gap: 3%;
+  padding: 1%;
+  button{
+    // @include buttonBox;
+    background-color: #7fd4c9;
+    border-color: #7fd4c9;
+    padding: 3% 0%;
+    margin: 5% 20%;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1rem;
+    //--------------------
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  button:hover{
+    background-color: rgb(164, 250, 221);
+  }
+}  
+
+.bg-project:hover{
+  transform: translateY(-10px);
+  background-color: rgb(164, 250, 221);
+}
+
+.bg-project{
+  background-color: #7fd4c9;
+  border-radius: 0.2rem;
+  padding: 10%;
+}
+
+.pj{
+  padding-bottom: 10%;
+  font-size: 0.7rem;
+}
+
+#project-1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#project-2{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#project-3{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#project-4{
+  grid-column: 1/2;
+  grid-row: 2/2;
+}
+
+#project-5{
+  grid-column: 2/3;
+  grid-row: 2/2;
+}
+
+#project-6{
+  grid-column: 3/4;
+  grid-row: 2/2;
+}
+
+
+// footer ---------------------
+footer{
+  background-color: #7fd4c9;
+  width: 100%;
+  height: 2rem;
+  color: aliceblue;
+  padding: 5%;
+}
+
+.bottom-container{
+  font-family: 'Secular One', sans-serif;
+   // font-family: $bold-text;
+   letter-spacing: 0.7rem;
+   text-align: center;
+}
+
+/* ------------------- * JS ------------------- */
+.scroll-up {
+  opacity: 0; 
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: all 1s;
+}
+
+.scroll-up.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+
+
+
+

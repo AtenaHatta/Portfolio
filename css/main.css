@@ -1,0 +1,611 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-image: url(/img/bg_white.png);
+  background-attachment: fixed;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  margin: -2% 2%;
+  width: 94%;
+  font-family: "Secular One", sans-serif;
+  z-index: 1000;
+}
+header .btn_contact:hover {
+  background-color: rgb(164, 250, 221);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 20%;
+}
+
+h3 {
+  padding: 1%;
+}
+
+h3:hover {
+  color: rgb(11, 186, 239);
+}
+
+h1 {
+  font-family: "Secular One", sans-serif;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.7rem;
+  letter-spacing: 1rem;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem white;
+  font-family: "Secular One", sans-serif;
+  z-index: 100000;
+}
+
+.menu_container {
+  text-align: left;
+  width: 15%;
+  padding: 0% 0.1%;
+  display: inline;
+  margin-left: 0;
+  font-family: "Secular One", sans-serif;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+}
+
+.topmenu_box {
+  margin-top: 40%;
+  font-size: 1.4rem;
+}
+
+.sns_img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_container {
+  margin: 0;
+  width: 75%;
+}
+
+.top_name {
+  position: absolute;
+  left: 13%;
+  top: 7%;
+  font-size: 17rem;
+  text-align: center;
+  line-height: 110%;
+  color: rgb(255, 255, 255);
+}
+
+.top-bgimg {
+  text-align: center;
+}
+
+.handwriting {
+  font-family: "Moon Dance", cursive;
+  padding-top: 1%;
+}
+
+.about {
+  margin-top: 30%;
+  margin-bottom: 30%;
+  margin-left: 15%;
+  margin-right: 20%;
+  text-align: left;
+}
+.about h1 {
+  font-size: 6rem;
+}
+
+.box-about {
+  font-family: "Secular One", sans-serif;
+}
+.box-about h2 {
+  padding-top: 10%;
+}
+.box-about p {
+  padding: 4%;
+}
+.box-about .box-about {
+  display: flex;
+}
+.box-about .green-img {
+  position: absolute;
+  bottom: 70%;
+  left: 0;
+  z-index: -1;
+}
+.box-about .flex {
+  position: relative;
+  display: flex;
+}
+.box-about .flex img {
+  width: 50%;
+}
+.box-about .button {
+  background-color: #7fd4c9;
+  border-color: #7fd4c9;
+  padding: 2% 3%;
+  margin: 0% 2%;
+  font-family: "Secular One", sans-serif;
+  font-size: 1rem;
+}
+.box-about .button:hover {
+  background-color: rgb(164, 250, 221);
+}
+
+.skill {
+  margin-top: 30%;
+  margin-bottom: 30%;
+  margin-left: 15%;
+  margin-right: 20%;
+}
+.skill h1 {
+  font-size: 6rem;
+}
+
+.icon-img-pg {
+  width: 10%;
+}
+
+.box-skill-img {
+  background-color: #e8ebef;
+  padding: 2%;
+  height: 5rem;
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.box-skill {
+  font-family: "Secular One", sans-serif;
+}
+.box-skill p {
+  padding: 4%;
+}
+.box-skill .box-skill-img {
+  display: flex;
+  position: relative;
+}
+.box-skill .flex {
+  display: flex;
+}
+.box-skill .flex .pink-img {
+  z-index: -1;
+  position: absolute;
+  bottom: 40%;
+  left: 5%;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 5%;
+  margin: 0 15%;
+  font-family: "Secular One", sans-serif;
+}
+
+.project {
+  margin-top: 30%;
+  margin-bottom: 30%;
+  margin-left: 15%;
+  margin-right: 20%;
+  position: relative;
+}
+
+.box-project {
+  display: grid;
+  flex-direction: column;
+  gap: 3%;
+  padding: 1%;
+}
+.box-project button {
+  background-color: #7fd4c9;
+  border-color: #7fd4c9;
+  padding: 3% 0%;
+  margin: 5% 20%;
+  font-family: "Secular One", sans-serif;
+  font-size: 1rem;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.box-project button:hover {
+  background-color: rgb(164, 250, 221);
+}
+
+.bg-project:hover {
+  transform: translateY(-10px);
+  background-color: rgb(164, 250, 221);
+}
+
+.bg-project {
+  background-color: #7fd4c9;
+  border-radius: 0.2rem;
+  padding: 10%;
+}
+
+.pj {
+  padding-bottom: 10%;
+  font-size: 0.7rem;
+}
+
+#project-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#project-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#project-3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#project-4 {
+  grid-column: 1/2;
+  grid-row: 2/2;
+}
+
+#project-5 {
+  grid-column: 2/3;
+  grid-row: 2/2;
+}
+
+#project-6 {
+  grid-column: 3/4;
+  grid-row: 2/2;
+}
+
+footer {
+  background-color: #7fd4c9;
+  width: 100%;
+  height: 2rem;
+  color: aliceblue;
+  padding: 5%;
+}
+
+.bottom-container {
+  font-family: "Secular One", sans-serif;
+  letter-spacing: 0.7rem;
+  text-align: center;
+}
+
+/* ------------------- * JS ------------------- */
+.scroll-up {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: all 1s;
+}
+
+.scroll-up.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.btn_contact {
+  background-color: #6bc9bc;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #046daa;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #36bee7;
+}
+
+.icon {
+  width: 50%;
+}
+
+.icon-img {
+  width: 15%;
+}
+
+.icon-img:hover, .icon:hover {
+  transform: translateY(-7px);
+}
+
+.myChangeImage {
+  height: 35rem;
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.top_img {
+  opacity: 0;
+  width: 85%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: anime 20s 0s infinite;
+  animation: anime 20s 0s infinite;
+}
+
+.top_img:nth-of-type(2) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.top_img:nth-of-type(3) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 20s;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.about-img {
+  width: 40%;
+}
+
+.img-project {
+  width: 100%;
+}
+
+.icon-img-pj-flex {
+  display: flex;
+}
+
+.icon-img-pj1 {
+  width: 33%;
+}
+
+.icon-img-pj2 {
+  width: 10%;
+}
+
+.icon-img-pj3 {
+  width: 10%;
+}
+
+.icon-img-pj-flex2 {
+  text-align: right;
+}
+
+@media screen and (max-width: 639px) {
+  .menu_container {
+    display: none;
+  }
+  body {
+    overflow: hidden;
+  }
+  header {
+    font-size: 50%;
+  }
+  header .logo {
+    font-size: 200%;
+  }
+  header .btn_contact {
+    display: none;
+  }
+  .top_img {
+    width: 100%;
+  }
+  .box-about .flex {
+    flex-direction: column;
+  }
+  .box-about .flex img {
+    width: 100%;
+  }
+  .box-about .flex .button {
+    margin: 3%;
+  }
+  .skill span {
+    color: rgb(168, 52, 52);
+  }
+  .skill .box-skill .box-skill-img {
+    height: 2rem;
+  }
+  .skill .box-skill img {
+    width: 90%;
+  }
+  #project-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #project-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #project-3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #project-4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  #project-5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  #project-6 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .box-project button {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .hamburger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 300;
+  }
+  .hamburger__line {
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    right: 0;
+    background-color: #000;
+    transition: all 0.5s;
+  }
+  .hamburger__line--1 {
+    top: 1px;
+  }
+  .hamburger__line--2 {
+    top: 18px;
+  }
+  .hamburger__line--3 {
+    top: 36px;
+  }
+  /*ハンバーガーがクリックされたら*/
+  .open .hamburger__line--1 {
+    transform: rotate(-45deg);
+    top: 11px;
+  }
+  .open .hamburger__line--2 {
+    opacity: 0;
+  }
+  .open .hamburger__line--3 {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+  /* 
+  sp-nav(ナビ)
+  =================================== */
+  .sp-nav {
+    position: fixed;
+    right: -100%;
+    /*ハンバーガーがクリックされる前はWindow右側に隠す*/
+    top: 0;
+    width: 70%;
+    /* 出てくるスライドメニューの幅 */
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.5s;
+    z-index: 200;
+    overflow-y: auto;
+    /* メニューが多くなったらスクロールできるように */
+  }
+  /*ハンバーガーがクリックされたら右からスライド*/
+  .open .sp-nav {
+    right: 0;
+  }
+  /* 
+  black-bg(ハンバーガーメニュー解除用bg)
+  =================================== */
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 100;
+  }
+  /*ハンバーガーメニューが開いたら表示*/
+  .open .black-bg {
+    opacity: 0.3;
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
